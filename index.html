@@ -1,1 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<header>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <div class="cart">
+
+    🛒 <span id="cart-count">0</span>
+
+</div>
+
+    <div class="logo">
+
+        <img src="assets/images/logo.png" alt="Ahaki Graphics Logo">
+
+        <div class="logo-text">
+            <h1>Ahaki Graphics</h1>
+            <span>Premium Vector Marketplace</span>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Designs</a></li>
+
+            <li><a href="#">Categories</a></li>
+
+            <li><a href="#">Bundles</a></li>
+
+            <li><a href="#">Pricing</a></li>
+
+            <li><a href="#">Blog</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header-right">
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search designs...">
+
+            <button>🔍</button>
+
+        </div>
+
+        <button class="login-btn">Login</button>
+        <div class="cart">
+    🛒 <span id="cart-count">0</span>
+</div>
+        <div class="cart">
+
+    🛒 <span id="cart-count">0</span>
+
+</div>
+
+    </div>
+
+    <div class="cart">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+</header>
+
+<script src="../assets/js/script.js"></script>
+</body>
+
+<body>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+    <div class="hero-left">
+
+        <span class="badge">
+            🔥 10,000+ Premium Designs
+        </span>
+
+        <h2>
+            Premium T-Shirt
+            Vector Marketplace
+        </h2>
+
+        <p>
+
+            Download High Quality AI, EPS,
+            SVG & PNG Files for your
+            Print On Demand Business.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn">
+
+                Browse Designs
+
+            </button>
+
+            <button class="secondary-btn">
+
+                Become Seller
+
+            </button>
+
+    <button class="cart-btn" onclick="addCart()">
+    🛒 Add Cart
+</button>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="assets/images/hero.png" alt="Hero Image">
+
+    </div>
+
+</section>
+
+<section class="filter-section">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Design...">
+
+    <div class="filters">
+
+        <button onclick="filterProduct('all')">
+            All
+        </button>
+
+        <button onclick="filterProduct('Typography')">
+            Typography
+        </button>
+
+        <button onclick="filterProduct('Fishing')">
+            Fishing
+        </button>
+
+        <button onclick="filterProduct('Islamic')">
+            Islamic
+        </button>
+
+        <button onclick="filterProduct('Vintage')">
+            Vintage
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     FEATURED DESIGNS
+========================== -->
+
+<section class="featured">
+
+    <div class="section-title">
+
+        <h2>Featured Designs</h2>
+
+        <p>Premium Vector Designs For Print On Demand Business</p>
+
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <span class="badge">Premium</span>
+
+            <button class="wishlist">❤</button>
+
+            <img src="assets/images/products/product1.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Vintage T-Shirt Design</h3>
+
+                <p class="category">Typography</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>$5.00</h4>
+
+                <div class="product-buttons">
+
+                    <button class="view-btn">
+                        👁 Quick View
+                    </button>
+
+                    <button class="cart-btn">
+                        🛒 Add Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+            <span class="badge">New</span>
+
+            <button class="wishlist">❤</button>
+
+            <img src="assets/images/products/product2.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Fishing Design</h3>
+
+                <p class="category">Fishing</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>$7.00</h4>
+
+                <div class="product-buttons">
+
+                    <button class="view-btn">
+                        👁 Quick View
+                    </button>
+
+                    <button class="cart-btn">
+                        🛒 Add Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="product-card">
+
+            <span class="badge">Hot</span>
+
+            <button class="wishlist">❤</button>
+
+            <img src="assets/images/products/product3.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Islamic Design</h3>
+
+                <p class="category">Islamic</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h4>$6.00</h4>
+
+                <div class="product-buttons">
+
+                    <button class="view-btn">
+                        👁 Quick View
+                    </button>
+
+                    <button class="cart-btn">
+                        🛒 Add Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- SEARCH -->
+
+    <section class="search">
+
+    <h2>Search Designs</h2>
+
+    <input
+        type="text"
+        placeholder="Search Design">
+
+    <button>Search</button>
+
+</section>
+
+
+    <!-- FEATURED -->
+
+<section class="featured">
+
+    <h2>Featured Designs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="assets/images/products/product1.jpg">
+
+            <h3>Vintage Design</h3>
+
+            <p>$5</p>
+
+            <button>Download</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/images/products/product2.jpg">
+
+            <h3>Fishing Design</h3>
+
+            <p>$7</p>
+
+            <button>Download</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/images/products/product3.jpg">
+
+            <h3>Islamic Design</h3>
+
+            <p>$6</p>
+
+            <button>Download</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/images/products/product4.jpg">
+
+            <h3>Typography</h3>
+
+            <p>$4</p>
+
+            <button>Download</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CATEGORIES -->
+
+    <section class="categories">
+
+    <h2>Popular Categories</h2>
+
+    <div class="category">
+
+        <div>Typography</div>
+
+        <div>Vintage</div>
+
+        <div>Fishing</div>
+
+        <div>Islamic</div>
+
+        <div>Gym</div>
+
+        <div>Camping</div>
+
+        <div>Automotive</div>
+
+        <div>Quotes</div>
+
+    </div>
+
+</section>
+
+    <!-- WHY -->
+
+    <section class="why">
+
+    <h2>Why Choose Ahaki Graphics?</h2>
+
+    <div class="why-box">
+
+        <div>
+
+            <h3>Premium Quality</h3>
+
+            <p>Professional Vector Designs.</p>
+
+        </div>
+
+        <div>
+
+            <h3>Instant Download</h3>
+
+            <p>Download Immediately.</p>
+
+        </div>
+
+        <div>
+
+            <h3>Commercial License</h3>
+
+            <p>Use For POD Business.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+
+    <h2>Subscribe</h2>
+
+    <p>Get Weekly Premium Designs</p>
+
+    <input
+        type="email"
+        placeholder="Enter Email">
+
+    <button>Subscribe</button>
+
+</section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+    <h2>Ahaki Graphics</h2>
+
+    <p>
+
+        Premium Marketplace For
+        Vector Designs.
+
+    </p>
+
+    <p>
+
+        © 2026 Ahaki Graphics
+
+    </p>
+
+</footer>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
